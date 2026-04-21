@@ -1,0 +1,58 @@
+package com.inventory.product.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.inventory.product.dto.ProductRequest;
+import com.inventory.product.entity.Product;
+import com.inventory.product.exception.ProductNotFoundException;
+import com.inventory.product.repository.ProductRepository;
+
+@Service
+public class ProductServiceImpl implements ProductService {
+
+	private final ProductRepository productRepo;
+	
+	public ProductServiceImpl(ProductRepository productRepository)
+	{
+		this.productRepo=productRepository;
+	}
+	@Override
+	public String addProduct(ProductRequest productRequest) {
+		Product product = new Product();
+		product.setName(productRequest.getName());
+		product.setDescription(productRequest.getDescription());
+		product.setPrice(productRequest.getPrice());
+		product.setSku(productRequest.getSku());
+		product.setCategory(productRequest.getCategory());
+		productRepo.save(product);
+		return "Product has been saved successfully";
+	}
+	@Override
+	public List<Product> getProducts() {
+		return productRepo.findAll();
+	}
+	@Override
+	public Product getProductById(Long productId) {
+		return productRepo.findById(productId).orElseThrow(()->new ProductNotFoundException("Product not found for the given product id"));
+	}
+	@Override
+	public String updateProduct(Long id, ProductRequest request) {
+		Product product=productRepo.findById(id).orElseThrow(()->new ProductNotFoundException("Product not found for the given product id"));
+		product.setName(request.getName());
+		product.setDescription(request.getDescription());
+		product.setCategory(request.getCategory());
+		product.setPrice(request.getPrice());
+		product.setSku(request.getSku());
+		productRepo.save(product);
+		return "Product Updated Successfully";
+	}
+	@Override
+	public String deleteProduct(Long id) {
+		Product product = productRepo.findById(id).orElseThrow(()->new ProductNotFoundException("Product not found for the given product id"));
+		productRepo.deleteById(id);
+		return "Product Deleted Successfully";
+	}
+
+}

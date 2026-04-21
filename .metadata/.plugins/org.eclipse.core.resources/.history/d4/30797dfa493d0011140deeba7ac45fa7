@@ -1,0 +1,5 @@
+package com.inventory.product.dto;
+
+public class ProductRequest {
+
+}

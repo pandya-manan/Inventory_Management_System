@@ -1,0 +1,5 @@
+package com.inventory.auth.controller;
+
+public class TestController {
+
+}

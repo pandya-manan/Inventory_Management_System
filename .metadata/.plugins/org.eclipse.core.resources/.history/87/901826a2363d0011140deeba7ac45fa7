@@ -1,0 +1,5 @@
+package com.inventory.auth.config;
+
+public class SecurityConfig {
+
+}

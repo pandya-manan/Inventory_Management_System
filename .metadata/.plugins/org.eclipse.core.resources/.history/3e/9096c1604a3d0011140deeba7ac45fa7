@@ -1,0 +1,13 @@
+package com.inventory.product.service;
+
+import com.inventory.product.dto.ProductRequest;
+
+public class ProductServiceImpl implements ProductService {
+
+	@Override
+	public String addProduct(ProductRequest productRequest) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

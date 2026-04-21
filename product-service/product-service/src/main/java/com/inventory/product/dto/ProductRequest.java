@@ -1,0 +1,85 @@
+package com.inventory.product.dto;
+
+import java.math.BigDecimal;
+
+import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.*;
+
+public class ProductRequest {
+	
+	@NotBlank(message="Product name cannot be blank")
+	@Schema(name="name",example="Dell Laptop",required=true)
+	private String name;
+	
+	@NotEmpty(message="Product description cannot be empty")
+	@Size(max=2000,message="Description is too long")
+	@Schema(name="description",example="Dell Laptop 512GB SSD, 12GB RAM",required=true)
+	private String description;
+	
+	@NotNull(message="Price is required")
+	@DecimalMin(value="0.0",inclusive=false,message="Price must be greater than 0")
+	@Schema(name="price",example="90500.50",required=true)
+	private BigDecimal price;
+	
+	@NotBlank(message="SKU is required")
+	@Schema(name="sku",example="DELL-LAPTOP-512")
+	private String sku;
+	
+	@NotBlank(message="Category is required")
+	@Schema(name="category",example="Electronics",required=true)
+	private String category;
+	
+	public ProductRequest() {}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public BigDecimal getPrice() {
+		return price;
+	}
+
+	public void setPrice(BigDecimal price) {
+		this.price = price;
+	}
+
+	public String getSku() {
+		return sku;
+	}
+
+	public void setSku(String sku) {
+		this.sku = sku;
+	}
+
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
+
+	public ProductRequest(String name, String description, BigDecimal price, String sku, String category) {
+		super();
+		this.name = name;
+		this.description = description;
+		this.price = price;
+		this.sku = sku;
+		this.category = category;
+	}
+	
+	
+
+}

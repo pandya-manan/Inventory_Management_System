@@ -1,0 +1,16 @@
+package com.inventory.product.service;
+
+import com.inventory.product.dto.ProductRequest;
+import com.inventory.product.entity.Product;
+import java.util.*;
+
+public interface ProductService {
+
+	String addProduct(ProductRequest productRequest);
+	
+	List<Product> getProducts();
+	
+	Product getProductById(Long productId);
+	
+	String updateProduct(Long id, ProductRequest request);
+}

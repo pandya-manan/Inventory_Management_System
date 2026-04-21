@@ -1,0 +1,50 @@
+package com.inventory.auth.service;
+
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
+
+import com.inventory.auth.dto.LoginRequest;
+import com.inventory.auth.dto.SignupRequest;
+import com.inventory.auth.entity.User;
+import com.inventory.auth.repository.UserRepository;
+import com.inventory.auth.exception.*;
+import com.inventory.auth.security.JwtUtil;
+@Service
+public class AuthServiceImpl implements AuthService {
+	
+	private final UserRepository userRepository;
+	
+	private final PasswordEncoder passwordEncoder;
+	
+	//Constructor Injection
+	public AuthServiceImpl(UserRepository userRepository, PasswordEncoder passwordEncoder)
+	{
+		this.userRepository=userRepository;
+		this.passwordEncoder=passwordEncoder;
+	}
+
+	@Override
+	public String signup(SignupRequest signupRequest) {
+		User user = new User();
+		user.setEmail(signupRequest.getEmail());
+		user.setPassword(passwordEncoder.encode(signupRequest.getPassword()));
+		user.setUsername(signupRequest.getUsername());
+		user.setRole("USER");
+		userRepository.save(user);
+		return "User Registered Successfully!";
+		
+	}
+
+	@Override
+	public String login(LoginRequest loginRequest) {
+		User user = userRepository.findByUsername(loginRequest.getUsername())
+                .orElseThrow(() -> new UserNotFoundException("User not found"));
+
+        if (!passwordEncoder.matches(loginRequest.getPassword(), user.getPassword())) {
+            throw new InvalidCredentialsException("Invalid password");
+        }
+
+        return JwtUtil.generateToken(user.getUsername());
+	}
+
+}

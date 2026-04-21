@@ -1,0 +1,20 @@
+package com.inventory.auth.service;
+
+import com.inventory.auth.dto.LoginRequest;
+import com.inventory.auth.dto.SignupRequest;
+
+public class AuthServiceImpl implements AuthService {
+
+	@Override
+	public String signup(SignupRequest signupRequest) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String login(LoginRequest loginRequest) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

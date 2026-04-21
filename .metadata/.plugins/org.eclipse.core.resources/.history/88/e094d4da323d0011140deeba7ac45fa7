@@ -1,0 +1,5 @@
+package com.inventory.auth.entity;
+
+public class User {
+
+}

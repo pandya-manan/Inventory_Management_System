@@ -1,0 +1,10 @@
+package com.inventory.product.repository;
+
+import org.springframework.stereotype.Repository;
+import org.springframework.data.jpa.repository.*;
+import com.inventory.product.entity.Product;
+
+@Repository
+public class ProductRepository extends JpaRepository<Product,Long>{
+
+}

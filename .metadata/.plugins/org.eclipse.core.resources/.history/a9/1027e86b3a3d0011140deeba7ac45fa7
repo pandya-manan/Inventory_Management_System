@@ -1,0 +1,5 @@
+package com.inventory.auth.exception;
+
+public class UserNotFoundException {
+
+}

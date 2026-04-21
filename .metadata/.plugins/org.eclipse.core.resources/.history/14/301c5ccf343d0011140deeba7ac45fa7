@@ -1,0 +1,5 @@
+package com.inventory.auth.service;
+
+public interface AuthService {
+
+}
