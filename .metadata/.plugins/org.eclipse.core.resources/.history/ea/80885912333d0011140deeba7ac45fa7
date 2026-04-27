@@ -1,5 +1,0 @@
-package com.inventory.auth.repository;
-
-public interface UserRepository {
-
-}

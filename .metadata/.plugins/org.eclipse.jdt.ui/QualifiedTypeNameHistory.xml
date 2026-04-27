@@ -1,2 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.inventory.auth.entity.User"/>
+    <fullyQualifiedTypeName name="org.springframework.security.config.annotation.web.builders.HttpSecurity"/>
+    <fullyQualifiedTypeName name="com.inventory.auth.exception.UserNotFoundException"/>
+    <fullyQualifiedTypeName name="com.inventory.auth.exception.InvalidCredentialsException"/>
+    <fullyQualifiedTypeName name="io.jsonwebtoken.security.Keys"/>
+    <fullyQualifiedTypeName name="io.jsonwebtoken.Jwts"/>
+    <fullyQualifiedTypeName name="io.jsonwebtoken.SignatureAlgorithm"/>
+    <fullyQualifiedTypeName name="org.springframework.security.core.userdetails.UsernameNotFoundException"/>
+    <fullyQualifiedTypeName name="org.springframework.security.core.userdetails.User"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="com.inventory.product.entity.Product"/>
+    <fullyQualifiedTypeName name="com.inventory.product.dto.ProductRequest"/>
+    <fullyQualifiedTypeName name="com.inventory.product.exception.ProductNotFoundException"/>
+    <fullyQualifiedTypeName name="io.swagger.v3.oas.models.Components"/>
+    <fullyQualifiedTypeName name="io.swagger.v3.oas.models.security.SecurityScheme"/>
+    <fullyQualifiedTypeName name="io.swagger.v3.oas.models.security.SecurityScheme.Type"/>
+    <fullyQualifiedTypeName name="io.swagger.v3.oas.models.security.SecurityRequirement"/>
+    <fullyQualifiedTypeName name="com.inventory.repository.InventoryRepository"/>
+    <fullyQualifiedTypeName name="org.springframework.security.authentication.InsufficientAuthenticationException"/>
+    <fullyQualifiedTypeName name="com.inventory.dto.AddStockRequest"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+    <fullyQualifiedTypeName name="com.inventory.exception.InventoryNotFoundException"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="com.inventory.exception.InsufficientStockException"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServletRequest"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.MethodArgumentNotValidException"/>
+    <fullyQualifiedTypeName name="com.inventory.exception.ProductNotFoundException"/>
+    <fullyQualifiedTypeName name="org.springframework.web.context.request.RequestContextHolder"/>
+    <fullyQualifiedTypeName name="com.inventory.config.FeignConfig"/>
+</qualifiedTypeNameHistroy>
