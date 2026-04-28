@@ -89,6 +89,7 @@ public class InventoryServiceImpl implements InventoryService {
 	    }
 
 	    inventory.setQuantity(inventory.getQuantity() - request.getQuantity());
+	    inventoryRepository.save(inventory);
 
 	    return "Stock reduced successfully!";
 	}

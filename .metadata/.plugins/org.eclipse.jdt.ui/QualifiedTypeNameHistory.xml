@@ -29,4 +29,7 @@
     <fullyQualifiedTypeName name="com.inventory.exception.ProductNotFoundException"/>
     <fullyQualifiedTypeName name="org.springframework.web.context.request.RequestContextHolder"/>
     <fullyQualifiedTypeName name="com.inventory.config.FeignConfig"/>
+    <fullyQualifiedTypeName name="java.math.BigDecimal"/>
+    <fullyQualifiedTypeName name="com.inventory.order.entity.OrderStatus"/>
+    <fullyQualifiedTypeName name="com.inventory.order.dto.ReduceStockRequest"/>
 </qualifiedTypeNameHistroy>

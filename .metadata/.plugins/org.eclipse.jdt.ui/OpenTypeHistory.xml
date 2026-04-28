@@ -3,4 +3,5 @@
     <typeInfo handle="=product-service/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.inventory.product.service{ProductService.java[ProductService" modifiers="513" timestamp="1776755846598"/>
     <typeInfo handle="=inventory-service/C:\/Users\/manan\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/3.3.5\/spring-data-jpa-3.3.5.jar=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.data=/=/maven.artifactId=/spring-data-jpa=/=/maven.version=/3.3.5=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;org.springframework.data.jpa.repository(JpaRepository.class[JpaRepository" modifiers="1537" timestamp="1766550274043"/>
     <typeInfo handle="=inventory-service/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.inventory.service{InventoryService.java[InventoryService" modifiers="513" timestamp="1776857091611"/>
+    <typeInfo handle="=order-service/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.inventory.order.service{OrderService.java[OrderService" modifiers="513" timestamp="1777284980755"/>
 </typeInfoHistroy>
