@@ -36,4 +36,5 @@
     <fullyQualifiedTypeName name="com.inventory.entity.Inventory"/>
     <fullyQualifiedTypeName name="com.inventory.exception.InsufficientStockException"/>
     <fullyQualifiedTypeName name="org.mockito.MockitoAnnotations"/>
+    <fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
 </qualifiedTypeNameHistroy>
