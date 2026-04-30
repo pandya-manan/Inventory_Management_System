@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Spring Boot W\discovery-server"/>
 			<item value="C:\Spring Boot W\order-service"/>
 			<item value="C:\Spring Boot W\inventory-service"/>
 			<item value="C:\Spring Boot W\product-service"/>

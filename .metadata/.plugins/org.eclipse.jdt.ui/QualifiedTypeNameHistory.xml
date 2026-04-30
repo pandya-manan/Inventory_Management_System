@@ -23,13 +23,17 @@
     <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
     <fullyQualifiedTypeName name="com.inventory.exception.InventoryNotFoundException"/>
     <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
-    <fullyQualifiedTypeName name="com.inventory.exception.InsufficientStockException"/>
     <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServletRequest"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.MethodArgumentNotValidException"/>
     <fullyQualifiedTypeName name="com.inventory.exception.ProductNotFoundException"/>
     <fullyQualifiedTypeName name="org.springframework.web.context.request.RequestContextHolder"/>
     <fullyQualifiedTypeName name="com.inventory.config.FeignConfig"/>
+    <fullyQualifiedTypeName name="com.inventory.order.dto.ReduceStockRequest"/>
+    <fullyQualifiedTypeName name="com.inventory.order.dto.OrderRequest"/>
     <fullyQualifiedTypeName name="java.math.BigDecimal"/>
     <fullyQualifiedTypeName name="com.inventory.order.entity.OrderStatus"/>
-    <fullyQualifiedTypeName name="com.inventory.order.dto.ReduceStockRequest"/>
+    <fullyQualifiedTypeName name="java.util.Optional"/>
+    <fullyQualifiedTypeName name="com.inventory.entity.Inventory"/>
+    <fullyQualifiedTypeName name="com.inventory.exception.InsufficientStockException"/>
+    <fullyQualifiedTypeName name="org.mockito.MockitoAnnotations"/>
 </qualifiedTypeNameHistroy>
